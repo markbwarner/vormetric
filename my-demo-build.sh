@@ -1,7 +1,7 @@
 #!/bin/bash
 CT="Content-Type:application/json"
-#DSMURL='3.80.96.50'
-URL='34.230.4.218'
+
+URL='vtsip'
 
 # Create keys in DSM and VTS
 i=0
@@ -17,7 +17,7 @@ echo $RESPONSE2
 i=$i+1
 done
 #setup token 
-PWD="Vormetric123!"
+PWD="yourvtspwd"
 CT="Content-Type:application/json"
 Credentials='{"username":"vtsroot","password":"'$PWD'"}'
 echo $Credentials
